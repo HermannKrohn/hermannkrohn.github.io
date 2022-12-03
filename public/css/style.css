@@ -1,0 +1,169 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.img{
+    position: relative;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-img{
+    background-image: url('../img/header.jpg');
+    min-height: 100%;
+}
+
+.education-img{
+    background-image: url('../img/education.jpeg');
+    min-height: 400px;
+}
+
+.experience-img{
+    background-image: url('../img/experience.jpg');
+    min-height: 400px;
+}
+
+.personal-projects-img{
+    background-image: url('../img/personal-projects.jpg');
+    min-height: 400px;
+}
+
+.skills-img{
+    background-image: url('../img/skills.jpg');
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background: #f4f4f4;
+    color: #666;
+}
+
+.section-dark{
+    background: #282e34;
+    color: #ddd;
+}
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.img-text .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    padding-right: 12px;
+}
+
+.img-text .border.trans{
+    background-color: rgba(105,105,105,0.9);
+}
+
+.education-experience, .experience{
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgray;
+}
+
+.education-experience:last-child, .experience:last-child{
+    border-bottom: none;
+}
+
+.education-title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.education-location{
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.education-experience p{
+    text-align: left;
+}
+
+.experience{
+    display: flex;
+    text-align: left;
+}
+
+.narrow-col{
+    width: 15%;
+    margin-right: 3%;
+}
+
+.wide-col{
+    width: 80%;
+}
+
+.experience-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    padding-bottom: 3px;
+}
+
+@media(max-width: 586px){
+    .img{
+        background-attachment: scroll;
+    }
+}
+
+.skills-container{
+    display: flex;
+    border: 1px solid rgb(169, 169, 169);
+    box-shadow: 0px 0px 10px 10px rgb(128, 128, 128);
+}
+
+.col{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-col, .right-col{
+    width: 85%;
+}
+
+.skills-list{
+    padding: 0px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.skill-description{
+    margin: 0px;
+}
+
+.skill-icon{
+    margin-right: 5px;
+}
