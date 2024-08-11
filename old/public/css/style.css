@@ -168,6 +168,13 @@ body, html{
     list-style-type: none;
 }
 
+.skill-list, li, p, i{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
 .skill-description{
     margin: 0px;
     text-align: left;
