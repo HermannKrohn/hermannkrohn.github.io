@@ -8,6 +8,10 @@ body, html{
     color: #666;
 }
 
+.justifyCenter{
+    justify-content: center !important;
+}
+
 .img{
     position: relative;
     background-position: center; 
