@@ -26,6 +26,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .header-style {
@@ -34,41 +35,52 @@
   padding-right: 12px; /* DOUBLE CHECK THIS OUT. account for 8px letter spacing */
 }
 
-.bold-text {
+.absolute {
+  position: absolute;
+}
+
+.bold-text-header {
   color: #fff;
-  font-size: 50px;
+  font-size: 27px;
   letter-spacing: 8px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.soft-text {
-  color: #b6b1b1;
-  font-size: 30px;
-  letter-spacing: 8px;
-  text-align: center;
-  text-transform: uppercase;
+.light-text {
+  color: #666;
 }
 
-@media (max-width: 1200px) {
-  .bold-text {
-    font-size: 42px;
-  }
-
-  .soft-text {
-    font-size: 22px;
-  }
+.text-margin {
+  margin: 1em 0;
 }
 
-@media (max-width: 750px) {
-  .bold-text {
-    font-size: 30px;
-    letter-spacing: 5px;
-  }
+.info-section{
+  flex-direction: column;
+  background: #f4f4f4;
+  padding: 3em;
+}
 
-  .soft-text {
-    font-size: 15px;
-    letter-spacing: 5px;
+.card-padding {
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid lightgray;
+}
+
+.card-padding:last-child {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+
+.card-title {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media(max-width: 586px){
+  .background-img{
+      background-attachment: scroll;
   }
 }
 
@@ -79,6 +91,22 @@
   align-items: center;
   position: relative;
   height: 100vh;
+}
+
+.bold-text-landing {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.soft-text-landing {
+  color: #b6b1b1;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .landing-img {
@@ -160,6 +188,14 @@ Therefore, add 10px of padding to the left side to make them equal. */
   .landing-box {
     width: 95vw;
   }
+
+  .bold-text-landing {
+    font-size: 42px;
+  }
+
+  .soft-text-landing {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -183,6 +219,16 @@ Therefore, add 10px of padding to the left side to make them equal. */
   
   .landing-box .flex-big {
     padding-left: 8px; /* account for the letter spacing */
+  }
+
+  .bold-text-landing {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .soft-text-landing {
+    font-size: 15px;
+    letter-spacing: 5px;
   }
 }
 
@@ -208,4 +254,94 @@ Therefore, add 10px of padding to the left side to make them equal. */
   .landing-box .flex-big {
     padding-left: 8px; /* account for the letter spacing */
   }
+}
+
+/* About */
+
+#about {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 1em 2em 1.245em 2em; /* Ensures equal white space above h2 and below p. If font size change, this may need to be recomputed */
+}
+
+.about-section-header {
+  color: #666;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+/* Education */
+
+.education-img {
+  background-image: url('../img/education.jpeg');
+  min-height: 400px;
+}
+
+/* Education Section and Work Experience Section */
+
+.experience-header {
+  justify-content: space-between;
+  padding-bottom: 1.25em;
+  font-size: 18px;
+}
+
+.experience-text {
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.experience-text:last-child {
+  padding-bottom: 0px;
+}
+
+@media (max-width: 900px) {
+  .experience-header {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+/* Experience */
+
+.experience-img {
+  background-image: url('../img/experience.jpg');
+  min-height: 400px;
+}
+
+/* Personal Projects */
+
+.personal-projects-img {
+  background-image: url('../img/personal-projects.jpg');
+  min-height: 400px;
+}
+
+/* Personal Projects Section */
+
+.project-title {
+  padding-bottom: 1.25em;
+  font-size: 18px;
+}
+
+.project-text {
+  text-align: left;
+}
+
+/* footer */
+
+#footer {
+  background: #282e34;
+  color: #ddd;
+  text-align: center;
+  padding: 3.5em;
+}
+
+.icon {
+  color:#ddd;
+  padding: 1em 0.5em 0 0.5em;
+}
+
+.icon:hover {
+  color: #ffbf00;
+  text-decoration: underline;
 }
