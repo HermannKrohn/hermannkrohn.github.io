@@ -58,7 +58,7 @@
 
 .info-section{
   flex-direction: column;
-  background: #f4f4f4;
+  background: yellow;
   padding: 3em;
   justify-content: center;
   align-items: center;
@@ -264,7 +264,7 @@ Therefore, add 10px of padding to the left side to make them equal. */
 
 #about {
   text-align: center;
-  background: #f4f4f4;
+  background: yellow;
   padding: 1em 2em 1.245em 2em; /* Ensures equal white space above h2 and below p. If font size change, this may need to be recomputed */
 }
 
