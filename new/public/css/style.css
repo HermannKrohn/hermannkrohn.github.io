@@ -65,6 +65,7 @@
 }
 
 .card-padding {
+  width: 100%;
   max-width: 980px;
   padding-bottom: 1.5em;
   margin-bottom: 1.5em;
@@ -293,10 +294,23 @@ Therefore, add 10px of padding to the left side to make them equal. */
 
 .experience-text {
   text-align: left;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .experience-text:last-child {
+  padding-bottom: 0px;
+}
+
+.experience-text-subheader {
+  font-style: italic;
+}
+
+.ul-experience-bullet-points {
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+
+.ul-experience-bullet-points:last-child {
   padding-bottom: 0px;
 }
 

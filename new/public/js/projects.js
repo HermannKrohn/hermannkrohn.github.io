@@ -1,11 +1,15 @@
 const projects = [
   {
-    title: 'Queen&#39s University',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem sequi hic mollitia maiores doloribus similique enim et ipsum fugiat reiciendis, ad dicta architecto aspernatur quod voluptate necessitatibus nobis cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem sequi hic mollitia maiores doloribus similique enim et ipsum fugiat reiciendis, ad dicta architecto aspernatur quod voluptate necessitatibus nobis cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem sequi hic mollitia maiores doloribus similique enim et ipsum fugiat reiciendis, ad dicta architecto aspernatur quod voluptate necessitatibus nobis cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem sequi hic mollitia maiores doloribus similique enim et ipsum fugiat reiciendis, ad dicta architecto aspernatur quod voluptate necessitatibus nobis cum.'
+    title: 'Smart IoT Pantry',
+    text: 'Developed an IoT smart pantry that allows users to view items in their pantry from anywhere (bit.ly/IoT-Pantry).'
   },
   {
-    title: 'The Flatiron School',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem sequi hic mollitia maiores doloribus similique enim et ipsum fugiat reiciendis, ad dicta architecto aspernatur quod voluptate necessitatibus nobis cum.'
+    title: 'Alzheimer&#39s Wrist Band',
+    text: 'Helped design a prototype IoT wristband system to track patients with Alzheimer&#39s.'
+  },
+  {
+    title: 'Library Availability Seat Tracker',
+    text: 'Designed a system to track the availability and location of seats at the library.'
   }
 ];
 
