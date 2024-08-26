@@ -83,6 +83,15 @@
   line-height: 1.2;
 }
 
+.link {
+  color: #FF5722;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #BF360C;
+}
+
 @media(max-width: 950px){
   .background-img{
       background-attachment: scroll;
