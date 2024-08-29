@@ -53,7 +53,7 @@ const work_experiences = [
   {
     title: 'Co-Founder, CTO',
     subtitle: 'BetRewards',
-    date: 'December 2022 - November 2023',
+    date: 'December 2019 - November 2023',
     texts: [
       {
         subheader: 'Platform and Application Development',
