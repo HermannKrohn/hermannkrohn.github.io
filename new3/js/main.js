@@ -142,7 +142,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 (function typer() {
   const el = document.getElementById('typer');
   if (!el) return;
-  const words = ['firmware to full-stack.', 'machine learning models.', 'secure web platforms.', 'embedded systems.'];
+  const words = ['firmware to full-stack.', 'backend services', 'secure web platforms.', 'embedded systems.'];
   let w = 0, c = 0, deleting = false;
   function tick() {
     const word = words[w];
@@ -155,31 +155,11 @@ document.getElementById('year').textContent = new Date().getFullYear();
   tick();
 })();
 
-/* ---------- Animated stat counters ---------- */
-function animateCounters() {
-  document.querySelectorAll('.stat-num').forEach(el => {
-    const target = parseFloat(el.dataset.count);
-    const decimals = (el.dataset.count.split('.')[1] || '').length;
-    let start = null;
-    const dur = 1400;
-    function step(t) {
-      if (!start) start = t;
-      const p = Math.min((t - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = (target * eased).toFixed(decimals);
-      if (p < 1) requestAnimationFrame(step);
-      else el.textContent = target.toFixed(decimals);
-    }
-    requestAnimationFrame(step);
-  });
-}
-
 /* ---------- Reveal on scroll ---------- */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       e.target.classList.add('in');
-      if (e.target.classList.contains('hero-inner')) animateCounters();
       revealObserver.unobserve(e.target);
     }
   });
