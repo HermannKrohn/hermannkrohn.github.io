@@ -154,7 +154,7 @@ const techs = [
 function renderTechStack() {
   document.getElementById('tech-stack').innerHTML = techs.map(t => `
     <span class="logo-chip" title="${t.name}">
-      <img class="logo-img" src="../public/icons/${t.file}.svg" alt="${t.name}" loading="lazy">
+      <img class="logo-img" src="public/icons/${t.file}.svg" alt="${t.name}" loading="lazy">
     </span>`).join('');
 }
 
