@@ -131,9 +131,30 @@ function renderProjects() {
     </article>`).join('');
 }
 
+/* ---------- Tech stack (colored logo images from public/icons) ---------- */
+const techs = [
+  { name: 'C',          file: 'c' },
+  { name: 'C++',        file: 'cplusplus' },
+  { name: 'Scala',      file: 'scala' },
+  { name: 'Python',     file: 'python' },
+  { name: 'JavaScript', file: 'javascript' },
+  { name: 'TypeScript', file: 'typescript' },
+  { name: 'React',      file: 'react' },
+  { name: 'Node.js',    file: 'nodejs' },
+  { name: 'Snowflake',  file: 'snowflake' }
+];
+
+function renderTechStack() {
+  document.getElementById('tech-stack').innerHTML = techs.map(t => `
+    <span class="logo-chip" title="${t.name}">
+      <img class="logo-img" src="../public/icons/${t.file}.svg" alt="${t.name}" loading="lazy">
+    </span>`).join('');
+}
+
 renderEducation();
 renderExperience();
 renderProjects();
+renderTechStack();
 
 /* ---------- Year ---------- */
 document.getElementById('year').textContent = new Date().getFullYear();
