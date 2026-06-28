@@ -205,7 +205,9 @@ a { color: inherit; text-decoration: none; }
 .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
 .about-text p { color: var(--text-dim); margin-bottom: 18px; font-size: 1.05rem; }
 .about-text strong { color: var(--text); font-weight: 600; }
-.tech-stack { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+/* grid centers the whole block, but items fill each row left-to-right,
+   so a partial last row starts at the left instead of being centered */
+.tech-stack { display: grid; grid-template-columns: repeat(auto-fit, 46px); justify-content: center; gap: 14px; margin-top: 28px; }
 .logo-chip {
   width: 46px; height: 46px; border-radius: 12px;
   background: var(--surface); border: 1px solid var(--border);
