@@ -141,7 +141,14 @@ const techs = [
   { name: 'TypeScript', file: 'typescript' },
   { name: 'React',      file: 'react' },
   { name: 'Node.js',    file: 'nodejs' },
-  { name: 'Snowflake',  file: 'snowflake' }
+  { name: 'Snowflake',  file: 'snowflake' },
+  { name: 'Git',           file: 'git' },
+  { name: 'AWS',           file: 'aws' },
+  { name: 'Docker',        file: 'docker' },
+  { name: 'Kubernetes',    file: 'kubernetes' },
+  { name: 'Grafana',       file: 'grafana' },
+  { name: 'Elasticsearch', file: 'elasticsearch' },
+  { name: 'Prometheus',    file: 'prometheus' }
 ];
 
 function renderTechStack() {
